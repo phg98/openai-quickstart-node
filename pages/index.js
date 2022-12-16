@@ -8,7 +8,7 @@ export default function Home() {
 
   async function onSubmit(event) {
     event.preventDefault();
-    const response = await fetch("/api/generate", {
+    const response = await fetch("/api/image", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -29,7 +29,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <img src="/dog.png" className={styles.icon} />
-        <h3>Name my pet</h3>
+        <h3>Show my pet</h3>
         <form onSubmit={onSubmit}>
           <input
             type="text"
@@ -38,9 +38,10 @@ export default function Home() {
             value={animalInput}
             onChange={(e) => setAnimalInput(e.target.value)}
           />
-          <input type="submit" value="Generate names" />
+          <input type="submit" value="Create Image" />
         </form>
-        <div className={styles.result}>{result}</div>
+        <img src={result} className={styles.result} />
+        {/* <div className={styles.result}>{result}</div> */}
       </main>
     </div>
   );
