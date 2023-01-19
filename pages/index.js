@@ -24,7 +24,9 @@ export default function Home() {
     <div>
       <Head>
         <title>OpenAI Quickstart</title>
-        <link rel="icon" href="/dog.png" />
+        <link rel="icon" href="/dog.png" />                
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3887788932946582"
+     crossorigin="anonymous"></script>
       </Head>
 
       <main className={styles.main}>
@@ -40,9 +42,6 @@ export default function Home() {
           />
           <input type="submit" value="Create Image" />
         </form>
-        
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3887788932946582"
-     crossorigin="anonymous"></script>
         <img src={result} className={styles.result} />
         {/* <div className={styles.result}>{result}</div> */}
       </main>
