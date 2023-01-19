@@ -41,7 +41,9 @@ export default function Home() {
             onChange={(e) => setAnimalInput(e.target.value)}
           />
           <input type="submit" value="Create Image" />
-        </form>
+        </form>        
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3887788932946582"
+     crossorigin="anonymous"></script>
         <img src={result} className={styles.result} />
         {/* <div className={styles.result}>{result}</div> */}
       </main>
